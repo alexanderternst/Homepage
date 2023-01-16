@@ -48,8 +48,7 @@ div.inhalt {
 /* Inhaltsverzeichnis SQL */
 #linkP:link,
 #linkP:visited {
-    /* background-color: #f44336; */
-    background-color: #0066FF;
+    background-color: #333333;
     color: white;
     padding: 15px 25px;
     text-align: center;
@@ -62,8 +61,7 @@ div.inhalt {
 /* Inhaltsverzeichnis SQL */
 #linkP:hover,
 #linkP:active {
-    /* background-color: red; */
-    background-color: #0044FF;
+    background-color: #222222;
 }
 
 h2 {
