@@ -1,0 +1,71 @@
+/* Profil Foto */
+img.pfp {
+    border: 2px solid #fff;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
+
+/* Logo Foto */
+img.logo {
+    border: 2px solid #fff;
+
+    box-shadow: 4px 4px 2px #ccc;
+    -moz-box-shadow: 4px 4px 2px #ccc;
+    -webkit-box-shadow: 4px 4px 2px #ccc;
+    -moz-border-radius: 25x;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
+
+/* Leerer Platz bei Kontaktinfo */
+.empty {
+    height: 3vh;
+}
+
+/* Download Foto */
+#src {
+    border: 2px solid #fff;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+}
+
+/* Inhaltsverzeichnis SQL */
+div.inhalt {
+    width: 300px;
+    height: 280px;
+    padding: 15px;
+    background-color: lightgrey;
+    box-shadow: 10px 10px 5px rgb(240, 240, 240);
+    margin-bottom: 10px;
+}
+
+/* Inhaltsverzeichnis SQL */
+#linkP:link,
+#linkP:visited {
+    /* background-color: #f44336; */
+    background-color: #0066FF;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+/* Inhaltsverzeichnis SQL */
+#linkP:hover,
+#linkP:active {
+    /* background-color: red; */
+    background-color: #0044FF;
+}
+
+h2 {
+    padding-top: 10px;
+}

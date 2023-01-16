@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Projekte</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
+    <!-- Inkludieren von Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar mit blauem Hintergrund und weissem Text. -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container-fluid">
+            <a class="navbar-brand bg-dark" href="index.html">Alexander Ernst</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a class="nav-link disable" aria-current="page" href="lebenslauf.html">Lebenslauf</a>
+                    <a class="nav-link disable" aria-current="page"
+                        href="kontaktinformationen.html">Kontaktinformationen</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle disable" href="projektarbeit.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projektarbeiten
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="projektarbeit.html">Übersicht</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="web-api.html">C# Web API</a></li>
+                            <li><a class="dropdown-item" href="wpf-app.html">WPF Applikation</a></li>
+                            <li><a class="dropdown-item" href="chatbot.html">C#/WPF Chatbot</a></li>
+                            <li><a class="dropdown-item" href="powershell.html">PowerShell SIT</a></li>
+                            <li><a class="dropdown-item" href="sql.html">SQL Projekte</a></li>
+                            <li><a class="dropdown-item" href="webseiten.html">Webseiten</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <h2>SQL Projekte</h2>
+
+        <div class="inhalt">
+            <h6><b>Inhalt</b></h6>
+            <ul>
+                <li><a href="#erm">ERM</a></li>
+                <li><a href="#tsql">T-SQL (Transact SQL)</a>
+                    <ul>
+                        <li><a href="#tsql">Erstellen von Datenbank</a></li>
+                        <li><a href="#import">Import von Daten aus Tabelle</a></li>
+                        <li><a href="#select">Select Statements</a></li>
+                    </ul>
+                </li>
+                <li><a href="#zugriff">Zugriff über C#</a>
+                    <ul>
+                        <li><a href="#adonet">ADO.NET</a></li>
+                        <li><a href="#ormapper">OR-Mapper</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <p>
+            In SQL habe ich schon T-SQL Befehle, für das Kreieren, modifizieren, und lesen von Datenbanken/Tabellen
+            gelernt und SSIS durch C# und T-SQL mit Procedures und Merge Statements gelernt.
+            In C# habe ich die Frameworks ADO.NET und OR-Mapper kennengelernt.
+        </p>
+
+        <h4 id="erm">ERM (Entity Relationship Model)</h4>
+        <p>
+            Ein ERM (Entity Relationship Model) beschreibt Tabellen, Schemas und Beziehungen einer Datenbank. <br>
+            Bevor man anfängt die Datenbank zu erstellen und mit Daten zu befüllen sollte man immer ein ERM zuerst
+            erstellen. <br>
+            Hier ist ein Beispiel von einem ERM Diagramm: <br>
+            <img id="src" class="rounded img-fluid" src="media/SQL/lager/Lager_Datenbank_ERM.png" alt="img" width="80%">
+        </p>
+        <a href="media/SQL/lager/Lager_Datenbank_ERM.png" download="Lager_ERM">
+            <img src="bilder/download.png" alt="img" width="2%">
+            ERM (Entity Relationship Model) herunterladen (PNG)
+        </a>
+        <br>
+        <a href="media/SQL/lager/Lager_ERM.xml" download="Lager_ERM">
+            <img src="bilder/download.png" alt="img" width="2%">
+            ERM (Entity Relationship Model) herunterladen (XML)
+        </a>
+
+        <br><br>
+        <h4 id="tsql">T-SQL (Transact-SQL)</h4>
+        <p>
+            Transact-SQL ist die Sprache, die wir benutzen, um Datenbanken, Tabellen und Beziehungen/Verbindungen
+            zwischen Tabellen zu erstellen. <br>
+            Hier sind zwei völlig funktionierende Beispiele, von T-SQL Befehlen (z.B. Datenbank, Stored Procedures,
+            Merge Statements, Select Statements erstellen). <br>
+            Ich habe auch ein drittes Beispiel, was auf das erste aufbaut, aber nicht völlig funktioniert, da eine
+            Tabelle fehlt. <br>
+        </p>
+        Umsetzung von obigem ERM (Lagersystem) in T-SQL mit allen Verbindungen und Beziehungen (funktionierend):<br>
+        <a href="media/SQL/lager/Lager_Datenbank.sql" download>
+            <img src="bilder/download.png" alt="img" width="2%">
+            1. Datenbank und Tabellen erstellen (T-SQL)
+        </a>
+        <br>
+        <a href="media/SQL/lager/Lager_Datenbank_ArtikelImport.sql" download>
+            <img src="bilder/download.png" alt="img" width="2%">
+            2. Erstellen von Tabelle für Import von Daten (T-SQL)
+        </a>
+
+        <br><br>
+        <h5 id="import">Import von Daten aus Tabelle</h5>
+        <p>
+            Mit Merge Statements und Stored Procedures können wir Tabellen befüllen und Daten modifizieren.
+            In diesem Beispiel befüllen wir unsere Tabellen in unserem Lagersystem mit Daten aus einer anderen
+            Tabelle.<br>
+        </p>
+        Umsetzung von Stored Procedures und Merge Statements (funktionierend):<br>
+        <a href="media/SQL/lager/Lager_Datenbank_Import.sql" download>
+            <img src="bilder/download.png" alt="img" width="2%">
+            1. Import von Daten (T-SQL)
+        </a>
+        <br>
+        <a href="media/SQL/lager/Lager_Datenbank_Import_2.sql" download>
+            <img src="bilder/download.png" alt="img" width="2%">
+            2. Import von Daten (T-SQL)
+        </a>
+
+        <br><br>
+        <h5 id="select">Select Statements</h5>
+        <p>
+            Select Statements können wir benutzen, um Datenbanken und Tabellen abzufragen.
+            In diesem Beispiel gibt es mehrere Select Statements, Inner und Cross Joins und die Modifizierung/Abfrage
+            von Datensätzen.
+        </p>
+        Umsetzung von Select Statements: <br>
+        <a href="media/SQL/lager/Lager_Datenbank_Select.sql" download>
+            <img src="bilder/download.png" alt="img" width="2%">
+            Select Statements (T-SQL)
+        </a>
+
+        <br><br>
+        <h4 id="zugriff">Zugriff über C#</h4>
+        <p>
+            Mit C# können wir auch auf SQL Datenbanken zugreifen und diese bearbeiten. <br>
+            Hier habe ich zwei Beispiele, eines, welches mit ADO.NET erstellt wurde und eines, das durch OR-Mapper mit
+            einem Db-First Ansatz erstellt wurde.
+        </p>
+
+        <h5 id="adonet">ADO.NET</h5>
+        <p>
+            Hier habe ich ein Beispiel von mehreren Abfragen unseres Lagersystems, welche durch ADO.NET in einem C#
+            Konsolen-Projekt umgesetzt wurden.
+            <br>
+            Natürlich müssen Sie in dem appsettings.json File ihren Connection String (Server, Datenbank,
+            Authentifizierung) angeben, damit das Programm richtig läuft.
+        </p>
+
+        <a href="media/SQL/ADONET.zip" download>
+            <img src="bilder/download.png" alt="img" width="2%">
+            Projekt/Solution herunterladen (ZIP)
+        </a>
+
+        <br><br>
+        <h5 id="ormapper">OR-Mapper</h5>
+        <p>
+            Der Nachteil, wenn wir ADO.NET verwenden ist, dass wir immer noch T-SQL Statements schreiben müssen. <br>
+            Mit einem OR-Mapper System können wir dies, eliminieren, da wir hier keine SQL Befehle mehr schreiben,
+            sondern
+            Datenbanken mit Klassen nach OOP erstellen.
+            <br>
+            Bei OR-Mapper systemen gibt es zwei Ansätze, Database-First (Db-First) und Code-First. <br>
+            Bei Db-First erstellen wir erst die Datenbanken mit T-SQL und importieren diese dann in einem OR-Mapper
+            System, und bei Code-First erstellen wir die Datenbank auch mit einem OR-Mapper System. <br>
+            In C# (die Programmiersprache die wir hier verwenden), wird ein OR-Mapper System mit dem Entity Framework durhcgeführt. <br>
+            Ein Beispiel eines Code First Ansatzes finden Sie in meinem <a href="web-api.html">Web API</a> welches mit einem Code-First Datenbank System durchgeführt wurde. <br>
+            Hier habe ich jetzt noch ein Beispiel eines Entity Framework (Db-First) Projektes von unserem Lagersystem:
+        </p>
+
+        <a href="media/SQL/efzLagerEFDbFirst.zip" download>
+            <img src="bilder/download.png" alt="img" width="2%">
+            Projekt/Solution herunterladen (ZIP)
+        </a>
+        <br><br>
+    </div>
+    <!-- Aufrufen von Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
