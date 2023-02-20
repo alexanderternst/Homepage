@@ -1,4 +1,4 @@
-# Homepage Webseite
+# Homepage
 Webseite welche Informationen über mich und meine Projekte bietet. Diese Webseite wurde mit HTML, Bootstrap und etwas Styling durch CSS erstellt.  
 Diese Webseite können Sie unter der URL [alexanderernst.ch](https://alexanderernst.ch) finden.
 ## Fotografie Webseite
