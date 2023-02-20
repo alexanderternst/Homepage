@@ -35,17 +35,7 @@ img.logo {
     -webkit-box-shadow: 10px 10px 5px #ccc;
 }
 
-/* Inhaltsverzeichnis SQL */
-div.inhalt {
-    width: 300px;
-    height: 280px;
-    padding: 15px;
-    background-color: lightgrey;
-    box-shadow: 10px 10px 5px rgb(240, 240, 240);
-    margin-bottom: 10px;
-}
-
-/* Inhaltsverzeichnis SQL */
+/* Links Button */
 #linkP:link,
 #linkP:visited {
     background-color: #333333;
@@ -58,7 +48,7 @@ div.inhalt {
     width: 200px;
 }
 
-/* Inhaltsverzeichnis SQL */
+/* Links Button */
 #linkP:hover,
 #linkP:active {
     background-color: #222222;
