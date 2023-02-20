@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projektarbeiten</title>
+    <title>C# NoSQL Web API</title>
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
     <!-- Inkludieren von Bootstrap -->
@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <!-- Navbar mit blauem Hintergrund und weissem Text. -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container-fluid">
@@ -54,22 +53,36 @@
         </div>
     </nav>
     <div class="container">
+        <h2>C# NoSQL Web API</h2>
 
-        <h2>Projektarbeiten</h2>
-        <p>
-            Hier finden Sie eine Übersicht einiger meiner Projektarbeiten, zum Beispiel einen Chatbot, ein System
-            Information Tool, usw.<br>
-        <h4>Verlinkungen auf Projektarbeiten</h4>
-        <a id="linkP" href="web-api.html">C# SQL Web API</a><br>
-        <a id="linkP" href="web-api.html">C# NoSQL Web API</a><br>
-        <a id="linkP" href="wpf-app.html">WPF Applikation</a><br>
-        <a id="linkP" href="chatbot.html">C#/WPF Chatbot</a><br>
-        <a id="linkP" href="sql.html">SQL Projekte</a><br>
-        <a id="linkP" href="webseiten.html">Webseiten</a><br>
-        <a id="linkP" href="powershell.html">PowerShell System Information Tool</a><br>
-        </p>
-    </div>
+        <p> Ein Web API für eine imaginäre Skiservice-Firma (Jetstream Service), diese Firma hat bereits eine Online Präsenz, braucht aber noch ein Web API. <br>
+            Dieses Web API braucht die Firma für die Aufnahme von Registrationen, welche dann in einer MongoDB Datenbank gespeichert werden.
+            Das Web API muss auch eine Authentifikation bieten, welche Admins erlaubt Registrationen zu modifizieren und auszulesen.</p>
 
+        <p> Dieses Projekt habe ich mit C#, und einer MongoDB Datenbank durchgesetzt, um auf diese Datenbank zuzugreifen habe ich den C# MongoDB Driver verwendet. <br>
+            Für die Authentifikation von Admins habe ich ein JWT Token, welches einen Tag gültig ist, verwendet.
+            Zuletzt habe ich für die Durchsetzung des Web APIs Services/Controller und Dependency Injection (DI) verwendet.</p>
+
+        <p>Dieses Projekt wurde auf .NET 6.0 erstellt und folgende NuGet Pakete (mit Versionen) wurden/kamen installiert: <br>
+
+            <ul>
+                <li>Microsoft.AspNetCore.Authentication.JwtBearer, Version=6.0.13</li>
+                <li>MongoDB.Driver, Version=2.18.0</li>
+                <li>Serilog.AspNetCore, Version=6.1.0</li>
+                <li>Swashbuckle.AspNetCore, Version=6.5.0</li>
+              </ul> 
+        
+        Visual Studio 2022 ist bei erstellung dieses Projektes auf Version 17.4.4 <br>
+        Auf dem Rechner mit dem das Projekt erstellt wurde läuft eine Version von Microsoft Windows 11</p>
+
+            <img id="src" src="bilder/web-api-nosql.png" class="rounded img-fluid" alt="Web API NoSQL" style="margin: 10px"
+            width="80%" />
+            <br>
+
+            <a href="https://github.com/alexanderternst/JetstreamSkiserviceAPI-MongoDB" target="_blank">GitHub mit NoSQL Web API</a>
+            <br><br>
+        </div>
+    
     <!-- Aufrufen von Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
